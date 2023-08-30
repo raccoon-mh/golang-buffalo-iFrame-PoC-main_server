@@ -1,5 +1,5 @@
-name = "mainServer"
-bin = "bin/mainServer"
+name = "main_server"
+bin = "bin/main_server"
 vcs = "git"
 with_pop = false
 with_sqlite = false
