@@ -12,7 +12,7 @@ var r *render.Engine
 func init() {
 	r = render.New(render.Options{
 		// HTML layout to be used for all HTML requests:
-		HTMLLayout: "mazer.plush.html",
+		HTMLLayout: "application.plush.html",
 
 		// fs.FS containing templates
 		TemplatesFS: templates.FS(),
@@ -25,7 +25,7 @@ func init() {
 			// for non-bootstrap form helpers uncomment the lines
 			// below and import "github.com/gobuffalo/helpers/forms"
 			// forms.FormKey:     forms.Form,
-			// forms.FormForKey:  forms.FormFor, export GO111MODULE=on
+			// forms.FormForKey:  forms.FormFor,
 		},
 	})
 }

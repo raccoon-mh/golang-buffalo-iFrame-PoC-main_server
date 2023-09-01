@@ -58,6 +58,9 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		app.GET("/", HomeHandler)
+		app.GET("/bootstrap/dashboard", BootstrapHandler)
+
+		app.GET("/externalwidget/{path}", ExternalWidgetHandler)
 
 		app.ServeFiles("/", http.FS(public.FS())) // serve files from the public directory
 	}

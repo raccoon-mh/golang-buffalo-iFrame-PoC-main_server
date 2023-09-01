@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Buffalo - Mazer Buffalo</title>
-    <%= stylesheetTag("application.css") %>
+    <title>Buffalo - Iframe Server</title>
+    <%#= stylesheetTag("application.css") %>
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="<%= authenticity_token %>" />
     <link rel="icon" href="<%= assetPath("images/favicon.ico") %>">
@@ -12,10 +12,15 @@
   <body>
 
     <div class="container">
-      <%= partial("flash.html") %>
-      <%= yield %>
+      <%#= partial("flash.html") %>
+      <%#= yield %>
     </div>
 
-    <%= javascriptTag("application.js") %>
+    <%#= javascriptTag("application.js") %>
   </body>
-</html>
+</html> -->
+
+<link rel="icon" href="<%=assetPath("images/favicon.ico") %>">
+<%= stylesheetTag("application.css") %>
+<%= javascriptTag("application.js") %>
+<%= yield %>
