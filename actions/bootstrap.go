@@ -28,8 +28,8 @@ func BootstrapHandler(c buffalo.Context) error {
 	// c.Set("respBodys", "sss")
 	// fmt.Println(htmlContent)
 
-	c.Set("respBody", "asd")
-	c.Set("respBodys", "sss")
+	c.Set("respBody", "respBody")
+	c.Set("respBodys", "respBodys")
 
 	return c.Render(http.StatusOK, r.HTML("dashboard/index.html"))
 }
@@ -69,4 +69,8 @@ func ExternalWidgetHandler(c buffalo.Context) error {
 
 	// 외부 사이트의 내용을 iframe에 표시할 형태로 템플릿으로 전달
 	return c.Render(http.StatusOK, r.HTML(string(bodyBytes)))
+}
+
+func BootstrapLoginFormHandler(c buffalo.Context) error {
+	return c.Render(http.StatusOK, r.HTML("login/index.html"))
 }

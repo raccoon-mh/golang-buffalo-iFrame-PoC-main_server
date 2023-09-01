@@ -59,6 +59,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 		app.GET("/bootstrap/dashboard", BootstrapHandler)
+		app.GET("/bootstrap/login", BootstrapLoginFormHandler)
 
 		app.GET("/externalwidget/{path}", ExternalWidgetHandler)
 
